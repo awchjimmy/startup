@@ -16,3 +16,6 @@
   - 月租 1299，會員系統
 - QDM
   - 月租 5000，抽成 0%
+
+### 參考
+- [2022年 8大電商開店平台比較！ - richscoach](https://richscoach.com/online-store-choose/)
