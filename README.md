@@ -19,6 +19,20 @@
 - 結帳 / 訂單成立
 - 訂單查詢
 
+
+```js
+// 加到購物車
+addToCart(prodId, amount);
+
+//
+removeFromCart(prodId, amount);
+
+// 清除購物車
+clearCart();
+
+// 結帳 / 訂單成立
+checkout();
+```
 ### 需求考量
 - 月租 / 抽成
 - 會員系統 / 會員等級
