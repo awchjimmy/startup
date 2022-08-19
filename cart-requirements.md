@@ -7,3 +7,9 @@ ecom/
   list.html    # 1-1 查看商品列表
   payment.html # 3 訂單成立，轉帳資訊
 ```
+
+### 購物車存在 localStorage
+```js
+window.localStorage.getItem('ami')
+window.localStorage.setItem('ami', amiString)
+```
