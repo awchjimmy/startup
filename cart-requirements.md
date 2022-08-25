@@ -31,6 +31,10 @@ ecom/
   detail.html  # 1-2 單項商品，可以下單選細項
   list.html    # 1-1 查看商品列表
   payment.html # 3 訂單成立，轉帳資訊
+
+admin/
+  ecom/
+    order.html # 訂單管理
 ```
 
 ### API
@@ -47,32 +51,54 @@ ecom/
 
 #### 訂單
 <details>
- <summary>GET /orders/&lt;order_id&gt; 查看訂單</summary>
- ...this is hidden, collapsable content...
+ <summary>GET /orders/listAll 查看多筆訂單</summary>
+ <pre>
+ fetched_data: [
+            {
+              orderId: "A10005",
+              orderDate: "2022-08-25 11:03:03",
+              orderName: "Jimmy",
+              paymentStatus: 1,
+              shippingStatus: 0,
+            },
+            {
+              orderId: "A10004",
+              orderDate: "2022-08-21 03:03:03",
+              orderName: "Kevin",
+              paymentStatus: 0,
+              shippingStatus: 0,
+            },
+            {
+              orderId: "A10003",
+              orderDate: "2022-08-13 07:03:03",
+              orderName: "Kevin",
+              paymentStatus: 0,
+              shippingStatus: 0,
+            },
+            {
+              orderId: "A10002",
+              orderDate: "2022-08-13 12:03:03",
+              orderName: "Jimmy",
+              paymentStatus: 1,
+              shippingStatus: 1,
+            },
+            {
+              orderId: "A10001",
+              orderDate: "2022-08-11 11:03:03",
+              orderName: "Jimmy",
+              paymentStatus: 1,
+              shippingStatus: 0,
+            },
+          ],
+ </pre>
+</details>
+<details>
+ <summary>GET /orders/&lt;order_id&gt; 查看單筆訂單</summary>
+ 
 </details>
 <details>
  <summary>POST /orders/add 新增訂單</summary>
  
-  <pre>[
-  {
-    "orderId": "10001",
-    "orderDetail": [
-      {
-        "productId": 1003,
-        "productAmount": 3
-      },
-      {
-        "productId": 1004,
-        "productAmount": 2
-      }
-    ],
-    "memberInfo": {},
-    "paymentInfo": {},
-    "shippingInfo": {},
-    "createdAt": "2022-08-25 11:00:03",
-    "updatedAt": "2022-08-25 11:00:03"
-  }
-]</pre>
 </details>
 
 ### 購物車存在 localStorage
