@@ -52,7 +52,27 @@ ecom/
 </details>
 <details>
  <summary>POST /orders/add 新增訂單</summary>
- ...this is hidden, collapsable content...
+ 
+  <pre>[
+  {
+    "orderId": "10001",
+    "orderDetail": [
+      {
+        "productId": 1003,
+        "productAmount": 3
+      },
+      {
+        "productId": 1004,
+        "productAmount": 2
+      }
+    ],
+    "memberInfo": {},
+    "paymentInfo": {},
+    "shippingInfo": {},
+    "createdAt": "2022-08-25 11:00:03",
+    "updatedAt": "2022-08-25 11:00:03"
+  }
+]</pre>
 </details>
 
 ### 購物車存在 localStorage
