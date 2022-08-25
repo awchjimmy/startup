@@ -33,6 +33,28 @@ ecom/
   payment.html # 3 訂單成立，轉帳資訊
 ```
 
+### API
+#### 商品
+<details>
+ <summary>GET /products/&lt;product_id&gt; 查看商品</summary>
+ ...this is hidden, collapsable content...
+</details>
+<details>
+ <summary>POST /products/add 新增商品</summary>
+ ...this is hidden, collapsable content...
+</details>
+
+
+#### 訂單
+<details>
+ <summary>GET /orders/&lt;order_id&gt; 查看訂單</summary>
+ ...this is hidden, collapsable content...
+</details>
+<details>
+ <summary>POST /orders/add 新增訂單</summary>
+ ...this is hidden, collapsable content...
+</details>
+
 ### 購物車存在 localStorage
 ```js
 window.localStorage.getItem('ami')
